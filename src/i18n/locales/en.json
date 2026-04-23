@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "testimonials": "Testimonials",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "langToggle": "AR"
+  },
+  "hero": {
+    "badge": "🌟 Most Popular English Course in Egypt",
+    "headline1": "Learn English",
+    "headline2": "Easily & Professionally",
+    "subtext": "Join thousands of students who transformed their English skills with our proven method. From zero to fluent — your journey starts here.",
+    "cta1": "Start Now",
+    "cta2": "Watch Details",
+    "stat1": "1200+",
+    "stat1Label": "Happy Students",
+    "stat2": "4.9★",
+    "stat2Label": "Average Rating",
+    "stat3": "98%",
+    "stat3Label": "Success Rate"
+  },
+  "features": {
+    "badge": "Course Benefits",
+    "title": "Everything You Need to Succeed",
+    "subtitle": "A comprehensive approach designed to take you from beginner to confident English speaker.",
+    "items": [
+      {
+        "icon": "MessageCircle",
+        "title": "Conversation Skills",
+        "desc": "Practice real-world English conversations through interactive live sessions and role-play exercises."
+      },
+      {
+        "icon": "BookOpen",
+        "title": "Simple Grammar",
+        "desc": "Master English grammar rules through easy-to-understand explanations and fun daily exercises."
+      },
+      {
+        "icon": "Zap",
+        "title": "Practical Training",
+        "desc": "Apply what you learn immediately with hands-on projects, quizzes, and real-scenario tasks."
+      },
+      {
+        "icon": "Users",
+        "title": "Continuous Support",
+        "desc": "Get personalized feedback and 24/7 support from your instructor throughout your journey."
+      }
+    ]
+  },
+  "howItWorks": {
+    "badge": "The Process",
+    "title": "Get Started in 3 Simple Steps",
+    "subtitle": "Our streamlined onboarding process gets you learning English within minutes.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Register for the Course",
+        "desc": "Sign up quickly and get instant access to your personalized student dashboard."
+      },
+      {
+        "number": "02",
+        "title": "Start Your Lessons",
+        "desc": "Follow our structured curriculum with live and recorded lessons at your own pace."
+      },
+      {
+        "number": "03",
+        "title": "Level Up",
+        "desc": "Track your progress, earn certificates, and achieve fluency with consistent practice."
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "Student Reviews",
+    "title": "What Our Students Say",
+    "subtitle": "Real stories from real students who transformed their English with us.",
+    "items": [
+      {
+        "name": "Sarah Ahmed",
+        "role": "University Student",
+        "avatar": "SA",
+        "rating": 5,
+        "text": "This course completely changed how I speak English. The instructor is amazing and the lessons are so clear. I went from barely speaking to having full conversations in just 3 months!"
+      },
+      {
+        "name": "Mohamed Khaled",
+        "role": "Software Engineer",
+        "avatar": "MK",
+        "rating": 5,
+        "text": "I needed English for my job interviews and this course delivered exactly that. The practical approach and constant support made all the difference. Highly recommended!"
+      },
+      {
+        "name": "Nour Hassan",
+        "role": "Business Owner",
+        "avatar": "NH",
+        "rating": 5,
+        "text": "This course transformed my professional life. I improved my English and closed deals with foreign clients. Best investment I ever made."
+      },
+      {
+        "name": "Layla Ibrahim",
+        "role": "Doctor",
+        "avatar": "LI",
+        "rating": 5,
+        "text": "The medical English module was exactly what I needed. The instructor tailors the content to your profession. I can now attend international conferences with confidence!"
+      },
+      {
+        "name": "Omar Youssef",
+        "role": "Marketing Manager",
+        "avatar": "OY",
+        "rating": 5,
+        "text": "Worth every penny! The speaking exercises and grammar simplified approach helped me write better emails and present in English to senior management. Superb!"
+      },
+      {
+        "name": "Rina Saleh",
+        "role": "Teacher",
+        "avatar": "RS",
+        "rating": 5,
+        "text": "I was afraid my level was too low, but the simple teaching style and the instructor's encouragement cleared that fear. Now I teach English to my students with confidence!"
+      }
+    ]
+  },
+  "pricing": {
+    "badge": "Investment",
+    "title": "One Course. Lifetime Value.",
+    "subtitle": "A single, transparent price for a lifetime of English fluency.",
+    "planName": "Complete English Mastery",
+    "price": "1,499",
+    "currency": "EGP",
+    "period": "/ lifetime access",
+    "features": [
+      "60+ Live & Recorded Video Lessons",
+      "Weekly 1-on-1 Feedback Sessions",
+      "Grammar & Vocabulary Workbooks",
+      "Speaking Practice Groups",
+      "Certificate of Completion",
+      "Lifetime Access to Updates",
+      "Private Community Access",
+      "WhatsApp Support Group"
+    ],
+    "cta": "Enroll Now",
+    "guarantee": "30-Day Money-Back Guarantee",
+    "popular": "Most Popular"
+  },
+  "finalCta": {
+    "title": "Start Your English Journey Today",
+    "subtitle": "Join over 1,200 students already mastering English. Don't wait — your future self will thank you.",
+    "cta": "Enroll Now — First Lesson Free",
+    "note": "No credit card required for your first lesson"
+  },
+  "footer": {
+    "tagline": "Empowering Arabic speakers to master English with confidence, clarity, and joy.",
+    "links": "Quick Links",
+    "contact": "Contact Us",
+    "follow": "Follow Us",
+    "email": "coach@englishpro.com",
+    "phone": "+20 100 123 4567",
+    "whatsapp": "WhatsApp Us",
+    "copyright": "© 2024 English Pro. All rights reserved.",
+    "madeWith": "Made with ❤️ for Arabic learners"
+  }
+}
