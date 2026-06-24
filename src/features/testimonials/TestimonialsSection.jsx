@@ -11,9 +11,6 @@ const avatarColors = [
   "from-primary to-primaryHover",
   "from-secondary to-secondary/70",
   "from-accent to-accent/70",
-  "from-purple-500 to-purple-700",
-  "from-pink-500 to-rose-500",
-  "from-teal-500 to-teal-700",
 ];
 
 const TestimonialsSection = () => {
@@ -76,38 +73,6 @@ const TestimonialsSection = () => {
               </AnimatedDiv>
             ))}
           </div>
-
-          {/* Overall rating bar */}
-          <AnimatedDiv variants={fadeUp} className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 bg-surface rounded-2xl border border-border p-6 shadow-soft">
-            <div className="text-center">
-              <p className="text-5xl font-extrabold text-primary">4.9</p>
-              <StarRating count={5} />
-              <p className={clsx("text-textMuted text-sm mt-1", isRTL && "font-arabic")}>Overall Rating</p>
-            </div>
-            <div className="w-px h-16 bg-border hidden sm:block" />
-            <div className="flex flex-col gap-2 w-full max-w-xs">
-              {[5, 4, 3].map((stars) => (
-                <div key={stars} className="flex items-center gap-3">
-                  <span className="text-sm text-textSecondary w-4">{stars}</span>
-                  <span className="text-accent text-sm">★</span>
-                  <div className="flex-1 h-2 bg-bg rounded-full overflow-hidden">
-                    <div
-                      className="h-full bg-accent rounded-full"
-                      style={{ width: stars === 5 ? "88%" : stars === 4 ? "9%" : "3%" }}
-                    />
-                  </div>
-                  <span className="text-xs text-textMuted">
-                    {stars === 5 ? "88%" : stars === 4 ? "9%" : "3%"}
-                  </span>
-                </div>
-              ))}
-            </div>
-            <div className="w-px h-16 bg-border hidden sm:block" />
-            <div className="text-center">
-              <p className="text-3xl font-extrabold text-textPrimary">1,200+</p>
-              <p className={clsx("text-textMuted text-sm", isRTL && "font-arabic")}>Happy Students</p>
-            </div>
-          </AnimatedDiv>
         </SectionWrapper>
       </div>
     </section>

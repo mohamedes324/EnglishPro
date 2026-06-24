@@ -4,6 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Globe } from "lucide-react";
 import { useLanguage } from "../hooks/useLanguage";
 import clsx from "clsx";
+import logoImg from "../assets/EnglishMastery.png";
+
+const WHATSAPP_URL = "https://wa.me/2001007834565?text=Hello%2C%20I%27m%20interested%20in%20the%20EnglishMastery%20speaking%20course";
 
 const navLinks = ["features", "howItWorks", "testimonials", "pricing", "contact"];
 
@@ -44,11 +47,13 @@ const Navbar = () => {
             className="flex items-center gap-2 cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary to-primaryHover flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-base">E</span>
-            </div>
+            <img
+              src={logoImg}
+              alt="EnglishMastery"
+              className="h-h-20 w-auto rounded-xl object-contain"
+            />
             <span className={clsx("font-bold text-xl text-textPrimary", isRTL && "font-arabic")}>
-              EnglishPro
+              EnglishMastery
             </span>
           </motion.div>
 
@@ -81,11 +86,11 @@ const Navbar = () => {
               {t("nav.langToggle")}
             </motion.button>
 
-            {/* CTA */}
+            {/* CTA - goes to WhatsApp */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => scrollTo("pricing")}
+              onClick={() => window.open(WHATSAPP_URL, "_blank")}
               className={clsx(
                 "hidden sm:flex px-5 py-2 rounded-xl bg-primary hover:bg-primaryHover text-white text-sm font-semibold shadow-md transition-all duration-200 cursor-pointer",
                 isRTL && "font-arabic"
@@ -129,7 +134,7 @@ const Navbar = () => {
                 </button>
               ))}
               <button
-                onClick={() => scrollTo("pricing")}
+                onClick={() => window.open(WHATSAPP_URL, "_blank")}
                 className={clsx(
                   "mt-2 px-4 py-3 rounded-xl bg-primary text-white font-semibold text-sm text-center cursor-pointer",
                   isRTL && "font-arabic"

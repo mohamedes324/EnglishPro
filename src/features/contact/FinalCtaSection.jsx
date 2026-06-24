@@ -6,6 +6,8 @@ import { SectionWrapper, AnimatedDiv, fadeUp } from "../../utils/animations";
 import { useLanguage } from "../../hooks/useLanguage";
 import clsx from "clsx";
 
+const WHATSAPP_URL = "https://wa.me/2001007834565?text=Hello%2C%20I%27m%20interested%20in%20the%20EnglishMastery%20speaking%20course";
+
 const FinalCtaSection = () => {
   const { t } = useTranslation();
   const { isRTL } = useLanguage();
@@ -49,7 +51,7 @@ const FinalCtaSection = () => {
           <AnimatedDiv variants={fadeUp}>
             <Button
               size="lg"
-              onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => window.open(WHATSAPP_URL, "_blank")}
               className="mx-auto"
             >
               <span className={clsx(isRTL && "font-arabic")}>{t("finalCta.cta")}</span>

@@ -1,16 +1,18 @@
 import { useTranslation } from "react-i18next";
-import { MessageCircle, BookOpen, Zap, Users } from "lucide-react";
+import { MessageCircle, Zap, Video, Users, Mic, UserCheck } from "lucide-react";
 import Card from "../../shared/components/Card";
 import Badge from "../../shared/components/Badge";
-import { SectionWrapper, AnimatedDiv, fadeUp, staggerContainer } from "../../utils/animations";
+import { SectionWrapper, AnimatedDiv, fadeUp } from "../../utils/animations";
 import { useLanguage } from "../../hooks/useLanguage";
 import clsx from "clsx";
 
 const iconMap = {
   MessageCircle: <MessageCircle size={28} />,
-  BookOpen: <BookOpen size={28} />,
   Zap: <Zap size={28} />,
+  Video: <Video size={28} />,
   Users: <Users size={28} />,
+  Mic: <Mic size={28} />,
+  UserCheck: <UserCheck size={28} />,
 };
 
 const colors = [
@@ -18,6 +20,8 @@ const colors = [
   "from-secondary/20 to-secondary/5 text-secondary",
   "from-accent/20 to-accent/5 text-accent",
   "from-primaryHover/20 to-primaryHover/5 text-primaryHover",
+  "from-purple-500/20 to-purple-500/5 text-purple-500",
+  "from-teal-500/20 to-teal-500/5 text-teal-500",
 ];
 
 const FeaturesSection = () => {
@@ -40,24 +44,21 @@ const FeaturesSection = () => {
             </p>
           </AnimatedDiv>
 
-          {/* Cards grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Cards grid — 6 items in a 2x3 or 3x2 grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {items.map((item, i) => (
               <AnimatedDiv key={i} variants={fadeUp}>
                 <Card className="h-full text-center group">
                   {/* Icon */}
                   <div className={clsx(
                     "w-16 h-16 rounded-2xl bg-gradient-to-br flex items-center justify-center mx-auto mb-5 transition-transform duration-300 group-hover:scale-110",
-                    colors[i]
+                    colors[i % colors.length]
                   )}>
                     {iconMap[item.icon]}
                   </div>
 
-                  {/* Bilingual title */}
-                  <h3 className="text-lg font-bold text-textPrimary mb-1">{item.title}</h3>
-                  <p className={clsx("text-base font-semibold text-primary mb-3", isRTL && "font-arabic")}>
-                    {item.titleAr}
-                  </p>
+                  {/* Title */}
+                  <h3 className={clsx("text-lg font-bold text-textPrimary mb-3", isRTL && "font-arabic")}>{item.title}</h3>
                   <p className={clsx("text-sm text-textSecondary leading-relaxed", isRTL && "font-arabic")}>
                     {item.desc}
                   </p>

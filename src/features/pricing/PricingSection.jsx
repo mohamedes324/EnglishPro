@@ -1,11 +1,13 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { Check, Shield, Zap } from "lucide-react";
+import { Check, Zap } from "lucide-react";
 import Button from "../../shared/components/Button";
 import Badge from "../../shared/components/Badge";
 import { SectionWrapper, AnimatedDiv, fadeUp, scaleIn } from "../../utils/animations";
 import { useLanguage } from "../../hooks/useLanguage";
 import clsx from "clsx";
+
+const WHATSAPP_URL = "https://wa.me/2001007834565?text=Hello%2C%20I%27m%20interested%20in%20the%20EnglishMastery%20speaking%20course";
 
 const PricingSection = () => {
   const { t } = useTranslation();
@@ -79,15 +81,14 @@ const PricingSection = () => {
                 </div>
 
                 {/* CTA */}
-                <Button size="lg" className="w-full justify-center">
+                <Button size="lg" className="w-full justify-center" onClick={() => window.open(WHATSAPP_URL, "_blank")}>
                   <span className={clsx(isRTL && "font-arabic")}>{t("pricing.cta")}</span>
                 </Button>
 
-                {/* Guarantee */}
-                <div className="flex items-center justify-center gap-2 mt-4 text-textMuted">
-                  <Shield size={14} />
-                  <span className={clsx("text-xs", isRTL && "font-arabic")}>{t("pricing.guarantee")}</span>
-                </div>
+                {/* Note */}
+                <p className={clsx("text-center text-textMuted text-xs mt-4", isRTL && "font-arabic")}>
+                  {t("pricing.note")}
+                </p>
               </div>
             </motion.div>
           </AnimatedDiv>

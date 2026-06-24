@@ -1,161 +1,151 @@
 {
   "nav": {
-    "features": "Features",
+    "features": "Benefits",
     "howItWorks": "How It Works",
-    "testimonials": "Testimonials",
+    "testimonials": "Reviews",
     "pricing": "Pricing",
     "contact": "Contact",
     "langToggle": "AR"
   },
   "hero": {
-    "badge": "🌟 Most Popular English Course in Egypt",
-    "headline1": "Learn English",
-    "headline2": "Easily & Professionally",
-    "subtext": "Join thousands of students who transformed their English skills with our proven method. From zero to fluent — your journey starts here.",
-    "cta1": "Start Now",
-    "cta2": "Watch Details",
-    "stat1": "1200+",
-    "stat1Label": "Happy Students",
-    "stat2": "4.9★",
-    "stat2Label": "Average Rating",
-    "stat3": "98%",
-    "stat3Label": "Success Rate"
+    "badge": "🎤 Speak English with Confidence",
+    "headline1": "Speak English",
+    "headline2": "With Confidence",
+    "subtext": "A focused speaking course designed for Arabic speakers who know some English but struggle to speak confidently. In just one month, you'll gain the confidence to express yourself clearly in everyday conversations.",
+    "cta1": "Enroll Now",
+    "cta2": "Learn More",
+    "stat1": "1 Month",
+    "stat1Label": "Course Duration",
+    "stat2": "2x/Week",
+    "stat2Label": "Live Sessions",
+    "stat3": "Online",
+    "stat3Label": "From Anywhere",
+    "coachName": "Ahmed Abdelgwad",
+    "coachRole": "English Speaking Coach"
   },
   "features": {
     "badge": "Course Benefits",
-    "title": "Everything You Need to Succeed",
-    "subtitle": "A comprehensive approach designed to take you from beginner to confident English speaker.",
+    "title": "What You'll Get",
+    "subtitle": "A practical, speaking-focused course built to help you break through the fear and start communicating naturally.",
     "items": [
       {
         "icon": "MessageCircle",
-        "title": "Conversation Skills",
-        "desc": "Practice real-world English conversations through interactive live sessions and role-play exercises."
-      },
-      {
-        "icon": "BookOpen",
-        "title": "Simple Grammar",
-        "desc": "Master English grammar rules through easy-to-understand explanations and fun daily exercises."
+        "title": "Speaking Practice",
+        "desc": "Practice real English conversations in every session. Focus on everyday topics so you feel ready for real-life situations."
       },
       {
         "icon": "Zap",
-        "title": "Practical Training",
-        "desc": "Apply what you learn immediately with hands-on projects, quizzes, and real-scenario tasks."
+        "title": "Confidence Building",
+        "desc": "Overcome the fear of speaking. Through guided exercises and a supportive environment, you'll gain the confidence to express yourself."
+      },
+      {
+        "icon": "Video",
+        "title": "Recorded Sessions",
+        "desc": "All sessions are recorded and available to you. Rewatch anytime to review what you learned and practice at your own pace."
       },
       {
         "icon": "Users",
-        "title": "Continuous Support",
-        "desc": "Get personalized feedback and 24/7 support from your instructor throughout your journey."
+        "title": "WhatsApp Support",
+        "desc": "Join a student WhatsApp group and get individual support directly from the instructor. Ask questions and receive guidance anytime."
+      },
+      {
+        "icon": "Mic",
+        "title": "Real Conversations",
+        "desc": "No boring textbook drills. Learn through real conversation practice, role-plays, and interactive speaking activities."
+      },
+      {
+        "icon": "UserCheck",
+        "title": "Direct Instructor Guidance",
+        "desc": "Get personal feedback and one-on-one guidance from Coach Ahmed throughout the course to improve your speaking skills faster."
       }
     ]
   },
   "howItWorks": {
     "badge": "The Process",
     "title": "Get Started in 3 Simple Steps",
-    "subtitle": "Our streamlined onboarding process gets you learning English within minutes.",
+    "subtitle": "Joining the course is simple. Here's how to get started and begin improving your English speaking skills.",
     "steps": [
       {
         "number": "01",
-        "title": "Register for the Course",
-        "desc": "Sign up quickly and get instant access to your personalized student dashboard."
+        "title": "Enroll via WhatsApp",
+        "desc": "Send us a message on WhatsApp to register. You'll receive all the course details and your session schedule."
       },
       {
         "number": "02",
-        "title": "Start Your Lessons",
-        "desc": "Follow our structured curriculum with live and recorded lessons at your own pace."
+        "title": "Join Live Sessions",
+        "desc": "Attend 2 online sessions per week. Practice speaking, ask questions, and get feedback in a supportive group setting."
       },
       {
         "number": "03",
-        "title": "Level Up",
-        "desc": "Track your progress, earn certificates, and achieve fluency with consistent practice."
+        "title": "Speak with Confidence",
+        "desc": "By the end of the month, you'll express your ideas more clearly and participate in everyday conversations comfortably."
       }
     ]
   },
   "testimonials": {
-    "badge": "Student Reviews",
-    "title": "What Our Students Say",
-    "subtitle": "Real stories from real students who transformed their English with us.",
+    "badge": "Early Feedback",
+    "title": "What Students Are Saying",
+    "subtitle": "Hear from students who joined our speaking practice sessions and started gaining confidence.",
     "items": [
       {
-        "name": "Sarah Ahmed",
+        "name": "Mona Tarek",
         "role": "University Student",
-        "avatar": "SA",
+        "avatar": "MT",
         "rating": 5,
-        "text": "This course completely changed how I speak English. The instructor is amazing and the lessons are so clear. I went from barely speaking to having full conversations in just 3 months!"
+        "text": "I always knew grammar but could never speak. After a few sessions, I started forming sentences without overthinking. The practice environment made all the difference."
       },
       {
-        "name": "Mohamed Khaled",
-        "role": "Software Engineer",
-        "avatar": "MK",
+        "name": "Youssef Kamal",
+        "role": "Accountant",
+        "avatar": "YK",
         "rating": 5,
-        "text": "I needed English for my job interviews and this course delivered exactly that. The practical approach and constant support made all the difference. Highly recommended!"
+        "text": "The instructor makes you feel comfortable even when you make mistakes. I started speaking more confidently at work meetings after just two weeks."
       },
       {
-        "name": "Nour Hassan",
-        "role": "Business Owner",
-        "avatar": "NH",
+        "name": "Hana Mostafa",
+        "role": "Fresh Graduate",
+        "avatar": "HM",
         "rating": 5,
-        "text": "This course transformed my professional life. I improved my English and closed deals with foreign clients. Best investment I ever made."
-      },
-      {
-        "name": "Layla Ibrahim",
-        "role": "Doctor",
-        "avatar": "LI",
-        "rating": 5,
-        "text": "The medical English module was exactly what I needed. The instructor tailors the content to your profession. I can now attend international conferences with confidence!"
-      },
-      {
-        "name": "Omar Youssef",
-        "role": "Marketing Manager",
-        "avatar": "OY",
-        "rating": 5,
-        "text": "Worth every penny! The speaking exercises and grammar simplified approach helped me write better emails and present in English to senior management. Superb!"
-      },
-      {
-        "name": "Rina Saleh",
-        "role": "Teacher",
-        "avatar": "RS",
-        "rating": 5,
-        "text": "I was afraid my level was too low, but the simple teaching style and the instructor's encouragement cleared that fear. Now I teach English to my students with confidence!"
+        "text": "I was afraid to speak in front of others. The small group sessions and WhatsApp support helped me overcome that fear. I feel much more confident now."
       }
     ]
   },
   "pricing": {
-    "badge": "Investment",
-    "title": "One Course. Lifetime Value.",
-    "subtitle": "A single, transparent price for a lifetime of English fluency.",
-    "planName": "Complete English Mastery",
-    "price": "1,499",
+    "badge": "Pricing",
+    "title": "Simple & Affordable",
+    "subtitle": "One clear price. Everything you need to start speaking English confidently.",
+    "planName": "English Speaking Course",
+    "price": "1499",
     "currency": "EGP",
-    "period": "/ lifetime access",
+    "period": "/ 1 month",
     "features": [
-      "60+ Live & Recorded Video Lessons",
-      "Weekly 1-on-1 Feedback Sessions",
-      "Grammar & Vocabulary Workbooks",
-      "Speaking Practice Groups",
-      "Certificate of Completion",
-      "Lifetime Access to Updates",
-      "Private Community Access",
-      "WhatsApp Support Group"
+      "1 Month Duration",
+      "2 Live Online Sessions per Week",
+      "All Sessions Recorded & Accessible",
+      "Student WhatsApp Group",
+      "Individual WhatsApp Support with Instructor",
+      "Speaking-Focused Curriculum",
+      "Beginner-Friendly (Basic English Required)",
+      "Practice Real Conversations"
     ],
-    "cta": "Enroll Now",
-    "guarantee": "30-Day Money-Back Guarantee",
-    "popular": "Most Popular"
+    "cta": "Enroll Now via WhatsApp",
+    "note": "Contact us on WhatsApp to reserve your spot",
+    "popular": "New Course"
   },
   "finalCta": {
-    "title": "Start Your English Journey Today",
-    "subtitle": "Join over 1,200 students already mastering English. Don't wait — your future self will thank you.",
-    "cta": "Enroll Now — First Lesson Free",
-    "note": "No credit card required for your first lesson"
+    "title": "Ready to Start Speaking English?",
+    "subtitle": "Don't let fear hold you back. Join the course, practice with real conversations, and speak with confidence in just one month.",
+    "cta": "Enroll Now via WhatsApp",
+    "note": "Message us on WhatsApp to get started"
   },
   "footer": {
-    "tagline": "Empowering Arabic speakers to master English with confidence, clarity, and joy.",
+    "tagline": "Helping Arabic speakers break through the fear of speaking English — with practice, support, and confidence.",
     "links": "Quick Links",
     "contact": "Contact Us",
-    "follow": "Follow Us",
-    "email": "coach@englishpro.com",
-    "phone": "+20 100 123 4567",
+    "email": "aabdelgwad865@gmail.com",
+    "phone": "+20 100 783 4565",
     "whatsapp": "WhatsApp Us",
-    "copyright": "© 2024 English Pro. All rights reserved.",
+    "copyright": "© 2025 EnglishMastery. All rights reserved.",
     "madeWith": "Made with ❤️ for Arabic learners"
   }
 }

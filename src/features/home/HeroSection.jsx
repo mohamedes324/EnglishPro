@@ -2,95 +2,12 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Play, ChevronDown } from "lucide-react";
 import Button from "../../shared/components/Button";
-import { SectionWrapper, AnimatedDiv, fadeUp, slideInLeft, slideInRight, scaleIn } from "../../utils/animations";
+import { SectionWrapper, AnimatedDiv, fadeUp } from "../../utils/animations";
 import { useLanguage } from "../../hooks/useLanguage";
 import clsx from "clsx";
+import coachImg from "../../assets/AhmedAbdElgwad.png";
 
-const HeroIllustration = () => (
-  <div className="relative w-full max-w-lg mx-auto">
-    {/* Glow blob */}
-    <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-3xl scale-110" />
-
-    {/* Main card */}
-    <motion.div
-      animate={{ y: [0, -12, 0] }}
-      transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-      className="bg-surface rounded-3xl shadow-card border border-border p-8 relative"
-    >
-      {/* Avatar row */}
-      <div className="flex items-center gap-4 mb-6">
-        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primaryHover flex items-center justify-center text-white text-2xl font-bold shadow-md">
-          👨‍🏫
-        </div>
-        <div>
-          <p className="font-bold text-textPrimary text-lg">Coach Ahmed</p>
-          <p className="text-textSecondary text-sm">English Instructor</p>
-          <div className="flex items-center gap-1 mt-1">
-            {[...Array(5)].map((_, i) => (
-              <span key={i} className="text-accent text-sm">★</span>
-            ))}
-            <span className="text-textMuted text-xs ms-1">4.9 (1,200+)</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Progress bars */}
-      <div className="space-y-3 mb-6">
-        {[
-          { label: "Speaking", pct: 87, color: "bg-primary" },
-          { label: "Grammar", pct: 92, color: "bg-secondary" },
-          { label: "Vocabulary", pct: 79, color: "bg-accent" },
-        ].map(({ label, pct, color }) => (
-          <div key={label}>
-            <div className="flex justify-between text-xs text-textSecondary mb-1">
-              <span>{label}</span>
-              <span className="font-semibold">{pct}%</span>
-            </div>
-            <div className="h-2 bg-bg rounded-full overflow-hidden">
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: `${pct}%` }}
-                transition={{ duration: 1.2, ease: "easeOut", delay: 0.5 }}
-                className={clsx("h-full rounded-full", color)}
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Status pill */}
-      <div className="flex items-center gap-2 bg-secondary/10 rounded-xl px-4 py-2">
-        <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-        <span className="text-secondary text-sm font-semibold">Live session available now!</span>
-      </div>
-    </motion.div>
-
-    {/* Floating badges */}
-    <motion.div
-      animate={{ y: [0, -8, 0] }}
-      transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.5 }}
-      className="absolute -top-4 -end-4 bg-surface border border-border rounded-2xl shadow-card px-4 py-2 flex items-center gap-2"
-    >
-      <span className="text-xl">🏆</span>
-      <div>
-        <p className="text-xs text-textMuted">Certificates</p>
-        <p className="text-sm font-bold text-textPrimary">1,200+ Issued</p>
-      </div>
-    </motion.div>
-
-    <motion.div
-      animate={{ y: [0, 8, 0] }}
-      transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut", delay: 1 }}
-      className="absolute -bottom-4 -start-4 bg-surface border border-border rounded-2xl shadow-card px-4 py-2 flex items-center gap-2"
-    >
-      <span className="text-xl">🔥</span>
-      <div>
-        <p className="text-xs text-textMuted">Success Rate</p>
-        <p className="text-sm font-bold text-textPrimary">98%</p>
-      </div>
-    </motion.div>
-  </div>
-);
+const WHATSAPP_URL = "https://wa.me/2001007834565?text=Hello%2C%20I%27m%20interested%20in%20the%20EnglishMastery%20speaking%20course";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -147,10 +64,10 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <AnimatedDiv variants={fadeUp} className="flex flex-wrap gap-4 mb-10">
-              <Button size="lg" onClick={() => scrollTo("pricing")}>
+              <Button size="lg" onClick={() => window.open(WHATSAPP_URL, "_blank")}>
                 <span className={clsx(isRTL && "font-arabic")}>{t("hero.cta1")}</span>
               </Button>
-              <Button variant="outline" size="lg" onClick={() => scrollTo("howItWorks")}>
+              <Button variant="outline" size="lg" onClick={() => scrollTo("features")}>
                 <Play size={18} className="text-primary" />
                 <span className={clsx(isRTL && "font-arabic")}>{t("hero.cta2")}</span>
               </Button>
@@ -173,13 +90,76 @@ const HeroSection = () => {
             </AnimatedDiv>
           </SectionWrapper>
 
-          {/* Illustration side */}
+          {/* Coach Image side */}
           <motion.div
             initial={{ opacity: 0, x: isRTL ? -60 : 60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            className="flex justify-center"
           >
-            <HeroIllustration />
+            <div className="relative w-full max-w-xl mx-auto">
+              {/* Glow blob behind image */}
+              <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/25 to-secondary/25 rounded-full blur-3xl scale-110" />
+
+              {/* Coach image */}
+              <motion.div
+                animate={{ y: [0, -10, 0] }}
+                transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+                className="relative"
+              >
+                <img
+                  src={coachImg}
+                  alt={t("hero.coachName")}
+                  className="w-full h-auto max-h-[550px] object-contain rounded-3xl drop-shadow-2xl"
+                />
+
+                {/* Coach name badge */}
+                <motion.div
+                  animate={{ y: [0, -6, 0] }}
+                  transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.5 }}
+                  className="absolute -bottom-4 start-1/2 -translate-x-1/2 bg-surface border border-border rounded-2xl shadow-card px-6 py-3 flex items-center gap-3"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primaryHover flex items-center justify-center text-white text-lg font-bold shadow-md">
+                    🎤
+                  </div>
+                  <div>
+                    <p className={clsx("font-bold text-textPrimary text-base", isRTL && "font-arabic")}>{t("hero.coachName")}</p>
+                    <p className={clsx("text-textSecondary text-xs", isRTL && "font-arabic")}>{t("hero.coachRole")}</p>
+                  </div>
+                  <div className="flex items-center gap-0.5 ms-2">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="text-accent text-sm">★</span>
+                    ))}
+                  </div>
+                </motion.div>
+
+                {/* Floating badge: Course Duration */}
+                <motion.div
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.5 }}
+                  className="absolute -top-4 -end-4 bg-surface border border-border rounded-2xl shadow-card px-4 py-2 flex items-center gap-2"
+                >
+                  <span className="text-xl">📅</span>
+                  <div>
+                    <p className="text-xs text-textMuted">Duration</p>
+                    <p className="text-sm font-bold text-textPrimary">1 Month</p>
+                  </div>
+                </motion.div>
+
+                {/* Floating badge: Sessions */}
+                <motion.div
+                  animate={{ y: [0, 8, 0] }}
+                  transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut", delay: 1 }}
+                  className="absolute top-1/3 -start-4 bg-surface border border-border rounded-2xl shadow-card px-4 py-2 flex items-center gap-2"
+                >
+                  <span className="text-xl">🎯</span>
+                  <div>
+                    <p className="text-xs text-textMuted">Sessions</p>
+                    <p className="text-sm font-bold text-textPrimary">2x / Week</p>
+                  </div>
+                </motion.div>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>

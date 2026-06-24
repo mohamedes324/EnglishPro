@@ -58,10 +58,7 @@ const HowItWorksSection = () => {
                     </motion.div>
 
                     {/* Content */}
-                    <h3 className="text-xl font-bold text-textPrimary mb-1">{step.title}</h3>
-                    <p className={clsx("text-base font-semibold mb-3", stepColors[i].text, isRTL && "font-arabic")}>
-                      {step.titleAr}
-                    </p>
+                    <h3 className="text-xl font-bold text-textPrimary mb-3">{step.title}</h3>
                     <p className={clsx("text-textSecondary text-sm leading-relaxed max-w-xs", isRTL && "font-arabic")}>
                       {step.desc}
                     </p>
